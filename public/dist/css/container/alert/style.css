@@ -1,0 +1,32 @@
+.card__mes {
+  display: flex;
+  padding: 10px;
+  margin: 40px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.strong {
+  font-weight: bold;
+  font-size: 300px;
+}
+
+.title__mes {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button__mes {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 5px;
+  background-color: #0d6efd;
+  color: white;
+  text-decoration: none;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
