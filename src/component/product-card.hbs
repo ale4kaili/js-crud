@@ -1,0 +1,27 @@
+{{#with data}}
+    <div class="card col-3 shadow p-3 mb-4 bg-body rounded">
+        <div class="card__title">
+            {{name}}
+        </div>
+        <div class="card__body">
+            <div class="card__description">
+                <span>
+                    {{description}}
+                </span>
+            </div>
+            <div>
+                <span class="card__id">
+                    ID: {{id}}
+                </span>
+            </div>
+            <div class="div">
+                <div class="card__price">
+                    {{price}} ₴
+                </div>
+                <div>
+                    <a class="card__editor" href="/product-edit?id={{id}}">Редагувати</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/with}}

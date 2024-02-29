@@ -1,0 +1,17 @@
+<main>
+    <section>
+        <div class="form">
+        <h1 class="form__title">Список товарів</h1>
+            <div class="product-list row">
+                {{#each list}}
+                    
+                    {{> product-card.hbs data=this}}
+                    
+                {{/each}}
+            </div>
+        </div>
+    <a href="/product-create" class="button__list">Додати</a>
+    </section>
+</main>
+
+                  

@@ -3,6 +3,7 @@
 .form {
     display: flex;
     flex-direction: column;
+    margin: 30px;
     padding: s.space(4);
     gap: s.space(8);
 
@@ -10,7 +11,7 @@
         font-size: 20px;
         font-weight: bold;
         padding-bottom: s.space(1);
-        border-bottom: 1px solid s.color('light');
+        color: #0d6efd;
     }
 
     &__content {
@@ -18,8 +19,15 @@
         gap: s.space(6);
     }
 
+    &__card__title {
+        font-size: 15px;
+        font-weight: bold;
+        padding-bottom: s.space(1);
+    }
+
     &__field {
         display: flex;
+        flex-grow: 1;
         flex-direction: column;
         gap: s.space(2);
     }
@@ -30,26 +38,37 @@
 
     &__input {
         border: 1px solid s.color('light');
+        border-radius: 5px;
         padding: s.space(2);
     }
 
     &__button {
         border: 1px solid s.color('light');
         padding: s.space(2);
-        border-radius: 20px;
+        margin-top: 20px;
+        border-radius: 5px;
+        background-color: #0d6efd;
+        color: white;
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
     }
 }
 
-main {
+.field__block {
     display: flex;
-    flex-direction: column;
-    gap: s.space(10);
+    flex-direction: row;
+    gap: 20px;
 }
 
-.user-list {
-    li {
-        padding-right: 15px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
+.button__block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+}
+
+.desc__hint {
+    font-size: 10px;
+    color: grey;
 }

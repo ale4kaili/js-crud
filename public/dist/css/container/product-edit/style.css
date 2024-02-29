@@ -1,0 +1,73 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  padding: 16px;
+  gap: 32px;
+}
+.form__title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 4px;
+  color: #0d6efd;
+}
+.form__content {
+  display: grid;
+  gap: 24px;
+}
+.form__card__title {
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+.form__field {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: 10px;
+}
+.form__label {
+  font-size: 14px;
+}
+.form__input {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px;
+}
+.form__button {
+  border: 1px solid #ddd;
+  padding: 8px;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+.form__button__save {
+  background-color: #0d6efd;
+}
+.form__button__delete {
+  background-color: red;
+  text-decoration: none;
+}
+
+.field__block {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.button__block {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+}
+
+.desc__hint {
+  font-size: 10px;
+  color: grey;
+}
+
+/*# sourceMappingURL=style.css.map */
