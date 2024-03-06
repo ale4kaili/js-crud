@@ -1,0 +1,77 @@
+{{! 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+}}
+
+<main class="main">
+  <div class="form__card shadow p-3 mb-4 bg-body rounded">
+    {{> heading title="Інформація про замовлення"}}
+    {{#with data.item}}
+      
+      <div class="item__info">
+        <div class="double-col"> ID: </div>
+        <div class="double-col">{{id}}</div>
+        <div class="divider__form">{{> divider}}</div>
+        <div>Ім'я:</div>
+        <div>Прізвище:</div>
+        <div>{{firstname}}</div>
+        <div>{{lastname}}</div>
+        <div>Телефон:</div>
+        <div>Електронна пошта:</div>
+        <div>{{phone}}</div>
+        <div>{{email}}</div>
+        <div class="divider__form">{{> divider}}</div>
+        <div class="double-col">Назва товару:</div>
+        <div class="double-col">{{item.title}}</div>
+        <div class="double-col">Коментар:</div>
+        <div class="double-col">{{comment}}</div>
+        <div class="divider__form">{{> divider}}</div>
+        <div>Вартість товарів:</div>
+        <div>Вартість доставки:</div>
+        <div>{{itemPrice}}</div>
+        <div>{{deliveryPrice}}</div>
+        <div>Сума до сплати:</div>
+        <div>Нараховані бонуси:</div>
+        <div>{{totalPrice}}</div>
+        <div>{{bonus}}</div>
+        <div class="divider__form">{{> divider}}</div>
+      </div>
+    {{/with}}
+    <a href="{{data.link}}" class="button">Змінити дані</a>
+  </div>
+
+  {{> heading title="Мої замовлення"}}
+  <div class="purchase-list">
+    {{#each data.list}}
+        <div class="purchase-list__id">
+          ID: {{id}}
+        </div>
+        <div class="purchase-list__label">
+          Товари
+        </div>
+        <div class="purchase-list__label">
+          Сума замовлення
+        </div>
+        <div class="purchase-list__label">
+          Нараховані бонуси
+        </div>
+        <div class="purchase-list__item">
+          {{item}}
+        </div>
+        <div class="purchase-list__item">
+           {{totalPrice}}₴
+        </div>
+        <div class="purchase-list__item">
+           {{bonus}}
+        </div>
+        <div class="divider-list">{{> divider}}</div>
+    {{/each}}
+    
+  </div>
+</main>
+<div style="height: 100px;"></div>
+
+{{! 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+}}
