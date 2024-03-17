@@ -34,7 +34,7 @@
 
 .item-card {
   border-radius: 10px;
-  border: 1px solid;
+  border: 1px solid #ced4da;
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -53,13 +53,14 @@
 }
 .item-card__subtitle {
   font-size: 16px;
+  color: #bdbdbd;
   flex: 1 0 auto;
 }
 .item-card__category {
   padding: 5px 10px;
   border-radius: 30px;
   font-size: 14px;
-  color: rgb(59, 59, 59);
+  color: rgb(2, 2, 2);
   border: 1px solid transparent;
 }
 .item-card__category--1 {
